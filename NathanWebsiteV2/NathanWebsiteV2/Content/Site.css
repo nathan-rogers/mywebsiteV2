@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -28,7 +29,11 @@ textarea {
     font-size: 19px;
     color: #dddddd;
 }
-
+#myname-tab a{
+    font-size:20px;
+   
+    color:#f44d3c;
+}
 #contact {
     background-image: url('contact-me.jpg');
     background-repeat: no-repeat;
@@ -93,7 +98,8 @@ textarea {
     }
 
         .nav-tabs li a {
-            margin-bottom: 1px;
+            padding-bottom:30px;
+            margin-bottom: -8px;
             width: 200px;
             transition: 2s;
             color: #000000;

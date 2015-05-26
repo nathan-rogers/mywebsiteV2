@@ -18,10 +18,13 @@
         });
     });
        
-    $(".about-me").on("click", ".side-nav-bar li a", function (event) {
+    $(".about-me").on("click", ".side-nav-bar li", function (event) {
+        
+        alert('red');
 
-        var sideUrl = $(this).attr("href");
-
+        var sideUrl = $(this).child.data("link");
+      
+;
         $.get(sideUrl, function (data) {
             $(".right-side").html(data);
         });

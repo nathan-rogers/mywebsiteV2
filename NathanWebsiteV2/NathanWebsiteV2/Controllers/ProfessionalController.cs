@@ -19,8 +19,12 @@ namespace NathanWebsiteV2.Controllers
         }
         public ActionResult ProfessionalPage1()
         {
-            
+
+            if (Request.IsAjaxRequest())
+            {
                 return PartialView();
+            }
+            return View();
            
         }
         public ActionResult ProfessionalPage2()

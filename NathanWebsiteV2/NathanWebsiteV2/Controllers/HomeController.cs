@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using NathanWebsiteV2.Models;
 
 namespace NathanWebsiteV2.Controllers
 {
@@ -24,14 +25,39 @@ namespace NathanWebsiteV2.Controllers
             return View();
         }
 
+         [HttpGet]
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
-            if (Request.IsAjaxRequest())
+            return PartialView(new Message());
+        }
+        [HttpPost]
+        public ActionResult Contact(Message message)
+        {
+            try
             {
-                return PartialView();
+                if (ContactRepository.InsertMessage(message.FullName, message.Email, message.Body))
+                {
+                    ViewBag.Message = "Thank  you for e-mailing me! I'll get back with you as soon as possible!";
+                    return View("ThankYou", message);
+                }
+                else
+                {
+                    ViewBag.Error = "Failed to update. Check code.";
+                    return View("Contact");
+                }
             }
-            return View();
+            catch (Exception)
+            {
+
+                ViewBag.Error = "No file was uploaded";
+                return View(new Message());
+            }
+        }
+
+        public ActionResult ThankYou(Message message)
+        {
+            return PartialView(message);
         }
     }
 }
+  

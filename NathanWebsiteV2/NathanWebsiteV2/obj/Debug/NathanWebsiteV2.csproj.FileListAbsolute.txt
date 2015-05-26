@@ -106,3 +106,4 @@ C:\Users\nathan\Documents\GitHub\mywebsiteV2\NathanWebsiteV2\NathanWebsiteV2\bin
 C:\Users\nathan\Documents\GitHub\mywebsiteV2\NathanWebsiteV2\NathanWebsiteV2\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\nathan\Documents\GitHub\mywebsiteV2\NathanWebsiteV2\NathanWebsiteV2\obj\Debug\NathanWebsiteV2.dll
 C:\Users\nathan\Documents\GitHub\mywebsiteV2\NathanWebsiteV2\NathanWebsiteV2\obj\Debug\NathanWebsiteV2.pdb
+C:\Users\nathan\Documents\GitHub\mywebsiteV2\NathanWebsiteV2\NathanWebsiteV2\obj\Debug\NathanWebsiteV2.csprojResolveAssemblyReference.cache

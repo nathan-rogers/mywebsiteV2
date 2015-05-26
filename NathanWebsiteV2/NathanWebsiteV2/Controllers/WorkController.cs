@@ -25,7 +25,7 @@ namespace NathanWebsiteV2.Controllers
             }
             return View();
         }
-        public ActionResult SeedPaths()
+        public ActionResult Hackathon2()
         {
             if (Request.IsAjaxRequest())
             {
@@ -33,13 +33,13 @@ namespace NathanWebsiteV2.Controllers
             }
             return View();
         }
-        public ActionResult PersonalProjects()
+        public ActionResult SpaceRace()
         {
-            if (Request.IsAjaxRequest())
-            {
-                return PartialView();
-            }
-            return View();
+            return PartialView();
+        }
+        public ActionResult Cybernetix()
+        {
+            return PartialView();
         }
         public ActionResult WorkNavigation()
         {

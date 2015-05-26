@@ -169,14 +169,64 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ContactRepository.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Message.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\blueprints.png" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\cigar-and-cognac.jpg" />
+    <Content Include="Content\contact-me.jpg" />
+    <Content Include="Content\dark_city_by_sandeepsarma-d5snrrq.jpg" />
+    <Content Include="Content\Don%27tDie.png" />
+    <Content Include="Content\Don%27tDie2.png" />
+    <Content Include="Content\Gameplay.png" />
+    <Content Include="Content\go1.jpg" />
+    <Content Include="Content\go2.jpg" />
+    <Content Include="Content\highscoreSR.png" />
+    <Content Include="Content\mearmy.jpg" />
+    <Content Include="Content\Media\0310.SQLServerLogo.png-550x0.png" />
+    <Content Include="Content\Media\AngularJS-large %281%29.png" />
+    <Content Include="Content\Media\AngularJS-large.png" />
+    <Content Include="Content\Media\blueprints.png" />
+    <Content Include="Content\Media\bootstrap.png" />
+    <Content Include="Content\Media\contact-me.jpg" />
+    <Content Include="Content\Media\dotnet.png" />
+    <Content Include="Content\Media\download.jpg" />
+    <Content Include="Content\Media\entity.png" />
+    <Content Include="Content\Media\facebook-128.png" />
+    <Content Include="Content\Media\github-128.png" />
+    <Content Include="Content\Media\html5css3badges.png" />
+    <Content Include="Content\Media\HTML5_logo_and_wordmark.svg.png" />
+    <Content Include="Content\Media\Icons8-Windows-8-Programming-Java-Coffee-Cup-Logo.ico" />
+    <Content Include="Content\Media\java-transparent.png" />
+    <Content Include="Content\Media\Java_logo_and_wordmark.svg" />
+    <Content Include="Content\Media\jquery_logo %281%29.png" />
+    <Content Include="Content\Media\jquery_logo.png" />
+    <Content Include="Content\Media\logo-800x188.png" />
+    <Content Include="Content\Media\Logo.png" />
+    <Content Include="Content\Media\microsoft-sql-server-2008-logo-EF404ACF5E-seeklogo.com.gif" />
+    <Content Include="Content\Media\Photoshop-Logo-XL-1024x1013.png" />
+    <Content Include="Content\Media\twitter-128.png" />
+    <Content Include="Content\Media\ue4.png" />
+    <Content Include="Content\Media\vslogo2012.png" />
+    <Content Include="Content\menow.jpg" />
+    <Content Include="Content\NowZad.jpg" />
+    <Content Include="Content\overview.png" />
+    <Content Include="Content\quotes-407.jpg" />
+    <Content Include="Content\Screenshot 2015-05-16 21.50.09.png" />
+    <Content Include="Content\Screenshot 2015-05-16 22.09.49.png" />
+    <Content Include="Content\Screenshot_2015-05-25-19-31-23.png" />
+    <Content Include="Content\spacerace.png" />
+    <Content Include="Content\specialized.jpg" />
+    <Content Include="Content\srgameplay.png" />
+    <Content Include="Content\topofmtn.jpg" />
+    <Content Include="Content\wt6tl08ml7c7.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -242,10 +292,12 @@
     <Content Include="Views\Personal\Cigars.cshtml" />
     <Content Include="Views\Professional\ProfessionalNavigation.cshtml" />
     <Content Include="Views\Work\Hackathon.cshtml" />
-    <Content Include="Views\Work\SeedPaths.cshtml" />
-    <Content Include="Views\Work\PersonalProjects.cshtml" />
     <Content Include="Views\Work\WorkNavigation.cshtml" />
     <Content Include="Views\Personal\PersonalNavigation.cshtml" />
+    <Content Include="Views\Work\Hackathon2.cshtml" />
+    <Content Include="Views\Work\Cybernetix.cshtml" />
+    <Content Include="Views\Work\SpaceRace.cshtml" />
+    <Content Include="Views\Home\ThankYou.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

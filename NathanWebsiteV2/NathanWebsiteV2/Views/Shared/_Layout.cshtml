@@ -22,11 +22,11 @@
             <div class="container">
                
                     <ul class="nav nav-tabs">
-                        <li class="active"><a href="@Url.Action("Index", "Home")">Home</a></li>
-                        <li><a href="@Url.Action("Professional", "Professional")">Professional</a></li>
-                        <li><a href="@Url.Action("Personal", "Personal")">Personal</a></li>
-                        <li><a href="@Url.Action("MyWork", "Work")">Work</a></li>
-                        <li><a href="@Url.Action("Contact", "Home")">Contact</a></li>
+                        <li id="myname-tab" class="active"><a href="@Url.Action("Index", "Home")">Nathan Rogers</a></li>
+                        <li id="prof-tab"><a href="@Url.Action("Professional", "Professional")">Professional</a></li>
+                        <li id="personal-tab"><a href="@Url.Action("Personal", "Personal")">Personal</a></li>
+                        <li id="work-tab"><a href="@Url.Action("MyWork", "Work")">Work</a></li>
+                        <li id="contact-tab"><a href="@Url.Action("Contact", "Home")">Contact</a></li>
                     </ul>
                 
             </div>
@@ -37,8 +37,16 @@
             @RenderBody()
         </div>
         <hr />
+        <div class="media-icons pull-right">
+
+            <a href="https://www.linkedin.com/in/nathandrogers" target="_blank"><img src="~/Content/Media/blueprints.png" /></a>
+            <a href="https://www.facebook.com/nathan.rogers.39982" target="_blank"><img src="~/Content/Media/facebook-128.png" /></a>
+            <a href="https://github.com/nathan-rogers" target="_blank"><img src="~/Content/Media/github-128.png" /></a>
+            <a href="https://twitter.com/nathandrogers" target="_blank"><img src="~/Content/Media/twitter-128.png" /></a>
+
+        </div>
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Nathan Rogers</p>
         </footer>
     </div>
 

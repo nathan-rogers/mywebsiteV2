@@ -1,17 +1,45 @@
-﻿@{
-    ViewBag.Title = "Contact";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+﻿
+<div class="contact-page">
+    <article id="contact" class="section-wrapper clearfix">
+        <div class="content-wrapper clearfix">
+            <div id="bkgimage"></div>
+            <h1 class="contact-me">Get in touch!</h1>
+            <div class="about-text">
+                <p>Feel free to contact me at any of the methods provided, or simply leave me a comment!</p>
+            </div>
+            <!-- CONTACT DETAILS -->
+            <div class="contact-details col-sm-5 col-md-3">
+                <div class="contact-info">
+                    <p>Tel: (719)-229-0865</p>
+                    <p class="email-address"><a href="nathan.rogers.d@gmail.com">nathan.rogers.d@gmail.com</a></p>
+                </div>
+            </div>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+            <div class="col-sm-7 col-md-9">
+                <form class="form-style validate-form clearfix" action="@Url.Action("Contact", "Home")" method="POST" role="form">
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" required data-validation-type="string" id="FullName" placeholder="Full Name" name="FullName">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" required data-validation-type="email" id="Email" placeholder="Email Address" name="Email">
+                        </div>
+                    </div><!-- end: form left col -->
+                    <!-- form right col -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea placeholder="Message..." class="form-control" id="Body" name="Body"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-sm btn-outline-inverse">Submit</button>
+                        </div>
+                    </div><!-- end: form right col -->
+
+                </form>
+            </div><!-- end: CONTACT FORM -->
+
+        </div><!-- .content-wrapper -->
+    </article><!-- .section-wrapper -->
+
+</div>
